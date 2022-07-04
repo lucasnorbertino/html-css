@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fontes em CSS</title>
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+			/* Safe Combination */
+			/*
+			h1, h2{
+				font-family: 'Times New Roman', Times, serif;
+			}
+			*/
+
+			body{
+				font-family: 'Work Sans', Arial, Verdana, sans-serif;
+				
+				/*
+				Medidas Absolutas:
+				- cm: centímetro 
+				- mm: milímetro 
+				- in: polegada 
+				- px: pixel 
+				- pt: ponto 
+				- pc: paica
+				
+				Medidas Relativas:
+				- em: medida relativa ao tamanho atual da fonte (altura do "M").
+				- ex: relativa à altura X de uma fonte.
+				- rem: relativa ao "root", ou seja, a fonte que está configurada no "body".
+				- vw (view width): relativa à largura da viewport, representada pela porcentagem.
+				- vh (view height): relativa à altura da viewport.
+				- %: porcentagem.
+				
+				*OBS: Por recomendação da W3C, utilizar somente "px" e "em".
+				*OBS: O tamanho da fonte padrão (font-size) em navegadores é de 16px.
+				*OBS: 16px = 1em.
+				*OBS: weight = peso, width = largura, height = altura.
+				*/
+
+				font-size: 1em;
+				
+				/*
+				font-weight: normal;
+				font-style: normal;
+				text-decoration: underline;
+				*/
+
+				/* lighter normal bold bolder númerico(100-900)*/
+			}
+
+			h1{
+				/*
+				font-family: 'Work Sans', sans-serif;
+				font-weight: bolder;
+				font-size: 3em;
+				font-style: italic;
+				*/
+				/* shorthand font */
+				/* font-style -> font-weight -> font-size -> font-family */
+				font: italic bolder 3em 'Work Sans', sans-serif;
+			}
+
+			h2{
+				font: bold 2em 'Work Sans';
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Trabalhando com fontes</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2>Subtítulo do exercício</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</body>
+</html>
