@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configurando o Tamanho da Imagem de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: repeat-y;
+
+            background-size: cover;
+            Configura o tamanho da imagem de fundo na tela.
+            - auto (padrão) = a imagem de fundo será aplicada em seu tamanho original.
+            - contain = redimensiona a imagem para que cubra o contêiner, mesmo que ocorra alguns cortes nela.
+            - cover = muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.
+            - [length] px e [length] % = redimensina a largura da imagem e faz a altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.
+            
+            background-attachment: fixed;
+            Configura o vínculo da imagem de fundo com resto do documento (página), principalmente se o conteúdo for maior do que a altura da página e seja necessário vazar uma rolagem vertical.
+            - scroll (padrão) = a imagem de fundo vai rolar junto com o conteúdo.
+            - fixed = a imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado.
+            */
+
+            /*
+            Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
