@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            height: 400px;
+            width: 400px;
+        }
+ 
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical */
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        /*
+        tr.linha{
+            background-color: aqua;
+        }
+
+        td.dado{
+            background-color: chartreuse;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela em HTML</h1>
+    <!--
+        Hierarquia de Tabelas (simples):
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+        
+        *OBS: Se a hierarquia não for respeitada na hora de inserir os elementos na tabela, eles vão aparecer antes ou depois da tabela.
+
+        *OBS: As tags <tr> e <td> não precisam de tag de fechamento, porém, se um elemento na tabela não tiver a tag inicial, ele vai juntar com o elemento anterior.
+
+        *OBS: Tabelas ainda são necessárias para organizar dados por terem uma estrutura rígida e que facilitam a visualização deles.
+
+        *OBS: Mas, tabelas não podem ser utilizadas para construir sites, como eram usadas antigamente no HTML4.
+    -->
+    <table>
+        <!-- Primeira Linha -->
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <!-- Segunda Linha -->
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <!-- Terceira Linha -->
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <!-- Quarta Linha -->
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
