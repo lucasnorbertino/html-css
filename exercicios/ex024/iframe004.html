@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu Site Principal</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, ipsum? Reprehenderit corrupti repellat eligendi eveniet blanditiis obcaecati cupiditate optio consequuntur fugiat ullam inventore aliquam, dolor mollitia tenetur facere quae maiores.
+    </p>
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso.
+    </iframe>
+    <!--
+        Para tornar o seu iframe mais seguro, utilize os seguintes parâmetros com os valores: sandbox="sandbox" referrerpolicy="no-referrer".
+
+        O primeiro parâmetro configura a captura e o cadastro de dados que os sites podem fazer dentro de um iframe, e quando colocamos o valor "sandbox" significa que nenhum dado será cadastrado e qualquer tentativa será bloqueada. Dentro desse parâmetro podemos colocar permissões de acesso ao que está dentro do iframe. Como, por exemplo:
+
+        - allow-same-origin: para sites que hospedam no mesmo servidor.
+        - allow-forms: para uso de formulários.
+        - allow-scripts: para uso de scripts.
+
+        O segundo parâmetro configura a política de referência dos sites que estão dentro do iframe, ou seja, qualquer site que está dentro do iframe não coletará nenhuma informação do usuário. O valor padrão é "no-referrer-when-downgrade", mas para limitar ainda mais pode ser colocado o valor "no-referrer".
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima vitae sint maiores id nostrum, illo similique, cum non ea tenetur porro, enim numquam totam doloribus nesciunt excepturi veritatis eveniet asperiores.
+    </p>
+</body>
+</html>
