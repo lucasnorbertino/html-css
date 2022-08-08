@@ -13,11 +13,22 @@
 </head>
 <body>
     <!--
+        As labels são importantes para etiquetar os elementos e conectar o conteúdo com o elemento através do id.
+
         - name = nome que identifica o objeto e é mais útil para o HTML e o PHP.
+
         - id = identificador do objeto e é mais útil para o JavaScript e para o uso das labels.
+
+        O método GET pode ser usado para manipular dados que não são sensíveis (nome, peso, altura, ...) e formulários ou URLs com o método GET podem ser compartilháveis. Esse método possui um limite de até 3000 bytes (3000 letras ou caracteres).
+
+        O método POST pode ser usado para manipular dados sensíveis (senhas, número de cartão de crédito, ...), quando você não quer que os seus dados aparecam na URL e enviar arquivos por um formulário (foto, vídeo, música, ...).
+
+        O melhor jeito de criptografar os dados do seu formulário é usando o protocolo HTTPS, algo que envolve conceitos mais avançados de segurança da informação.
+
+        Antigamente, acreditava-se que existia uma diferença de velocidade entre os métodos GET e POST na hora de enviar os formulários, hoje em dia, essa diferença é inexistente.
     -->
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
